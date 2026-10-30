@@ -441,41 +441,46 @@
     </div>
 
     <!-- PENDIDIKAN & SERTIFIKAT -->
-    <div class="grid-2">
-      <!-- Pendidikan -->
-      <div>
-        <h2 class="section-title title-green">Pendidikan</h2>
-        <div class="card edu-card" style="height: 100%;">
-          <span class="badge-year">2026 — Sekarang</span>
-          <h4>S1 PENDIDIKAN TEKNOLOGI INFORMASI</h4>
-          <div class="inst">UNIVERSITAS NEGERI SURABAYA</div>
-          <p>Fakultas Teknik. Fokus pada rekayasa perangkat lunak, sistem basis data, dan jaringan komputer.</p>
-          
-          <div style="margin-top: 24px;"></div>
-          <span class="badge-year">2023 — 2026</span>
-          <h4>TEKNIK KOMPUTER & JARINGAN</h4>
-          <div class="inst">SMK AL-MALIKI</div>
-          <p>Mempelajari perakitan komputer, MikroTik dasar, instalasi OS, dan routing jaringan dasar.</p>
-        </div>
-      </div>
+    <!-- PENDIDIKAN - VERSI RAPI -->
+<section class="pendidikan">
+  <h2>Pendidikan</h2>
 
-      <!-- Sertifikat -->
-      <div>
-        <h2 class="section-title title-yellow">Sertifikat</h2>
-        <div class="card" style="height: 100%;">
-          <div style="display: flex; flex-direction: column; gap: 16px;">
-            <div>
-              <h5 style="color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 4px;">Sertifikat Kompetensi TKJ</h5>
-              <p style="font-size: 0.78rem; color: var(--text-muted);">Uji Kompetensi Keahlian Teknik Komputer dan Jaringan SMK Al-Maliki.</p>
-            </div>
-            <div>
-              <h5 style="color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 4px;">Pelatihan Dasar Kepemimpinan (LDKS)</h5>
-              <p style="font-size: 0.78rem; color: var(--text-muted);">Sertifikat keikutsertaan aktif sebagai pengurus OSIS.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="card-pendidikan">
+    <span class="tahun">2026 — Sekarang</span>
+    <h3>S1 PENDIDIKAN TEKNOLOGI INFORMASI</h3>
+    <h4>UNIVERSITAS NEGERI SURABAYA</h4>
+    <p>Fakultas Teknik. Fokus pada rekayasa perangkat lunak, sistem basis data, dan jaringan komputer.</p>
+  </div>
+
+  <div class="card-pendidikan">
+    <span class="tahun">2023 — 2026</span>
+    <h3>TEKNIK KOMPUTER & JARINGAN</h3>
+    <h4>SMK AL-MALIKI</h4>
+    <p>Mempelajari perakitan komputer, MikroTik dasar, instalasi OS, dan routing jaringan dasar.</p>
+  </div>
+
+</section>
+
+<style>
+.pendidikan {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* ini yang bikin gak numpuk */
+}
+.card-pendidikan {
+  background: #2a3441;
+  padding: 20px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+.tahun {
+  background: #3a4a5a;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+</style>
 
     <!-- FOOTER CTA -->
     <div class="card cta-card">
